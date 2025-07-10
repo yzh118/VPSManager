@@ -1,5 +1,5 @@
 # VPS Manager
-## 简体中文|English
+## 简体中文|[English](https://github.com/yzh118/vpsmanager/blob/main/README_EN.md)
 VPS系统管理脚本，`v1.0.0`版本集成了APT、DNF等软件源管理与快捷切换，系统别名快速设置，系统检测，系统软件安装等功能。
 VPS Manager有开放的、可自定义的应用市场功能，通过URL中包含的`.conf`文件加载应用市场信息。
 ## 应用市场
