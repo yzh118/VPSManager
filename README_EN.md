@@ -1,5 +1,5 @@
 # VPS Manager
-## 简体中文 | English
+## [简体中文](https://github.com/yzh118/vpsmanager) | English
 
 VPS system management script. Version `v1.0.0` integrates features such as APT and DNF software source management and quick switching, system alias quick setup, system detection, and system software installation.
 
