@@ -1,4 +1,4 @@
-# VPS Manager
+# VPS Manager|VPS 管理器
 ## [简体中文](https://github.com/yzh118/vpsmanager) | English
 VPS system management script, version `v1.0.0` integrates APT, DNF and other software source management and quick switching, system alias quick setup, system detection, system software installation and other functions.
 VPS Manager has an open, customizable app store feature that loads app store information through `.conf` files contained in URLs.
@@ -43,3 +43,5 @@ The `Cd` field in the `.conf` file means the command that will be executed when 
 ### Attention!
 In `v1.0.0`, the PATH function has not been tested and may have unexpected bugs. Welcome to submit Issues!
 In `v1.1.0`, the PATH field was deleted and stopped, and the script's support for single variables for specified applications was removed. PATH is no longer recommended for use.
+## Major Update Log
+`v1.2.0` added certificate application functionality to the main menu, supporting wildcards, HTTP application, TXT record manual application, and automatic renewal.
