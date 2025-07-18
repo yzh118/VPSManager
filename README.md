@@ -18,6 +18,8 @@ https://8-8-8-8.top/yysc.conf
 ```
 {
 Name=Name
+PATH=不建议设置
+like_api=https://example.com/like_api_example.php
  {
  ID=<1>
  Title=示例
@@ -45,3 +47,4 @@ Name=Name
 在`v1.1.0`中，PATH字段被删除并停止、移除脚本中对指定应用的单一变量支持，不再建议使用PATH。
 ## 重大更新日志
 `v1.2.0`在主菜单新增了证书申请功能，支持通配符、支持HTTP申请、支持TXT记录手动申请、支持自动续签。
+在`v1.3.0`新增了对应用市场配置文件中的`like_api`可选全局配置字段的支持。
