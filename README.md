@@ -2,6 +2,16 @@
 ## 简体中文|[English](https://github.com/yzh118/vpsmanager/blob/main/README_EN.md)
 VPS系统管理脚本，`v1.0.0`版本集成了APT、DNF等软件源管理与快捷切换，系统别名快速设置，系统检测，系统软件安装等功能。
 VPS Manager有开放的、可自定义的应用市场功能，通过URL中包含的`.conf`文件加载应用市场信息。
+
+### 一键命令
+Github:
+```
+wget --no-check-certificate -N -c -O vpsmanager.sh https://raw.githubusercontent.com/yzh118/vpsmanager/v1.2.0/vpsmanager.sh && chmod +x vpsmanager.sh && bash vpsmanager.sh
+```
+官方脚本URL 8-8-8-8.top：
+```
+wget --no-check-certificate -N -c -O vpsmanager.sh https://8-8-8-8.top/vpsmanager.sh && chmod +x vpsmanager.sh && bash vpsmanager.sh
+```
 ## 应用市场
 本段分为两部分介绍
 1. “一”使用教学；
