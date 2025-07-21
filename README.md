@@ -6,7 +6,7 @@ VPS Manager有开放的、可自定义的应用市场功能，通过URL中包含
 ### 一键命令
 Github:
 ```
-wget --no-check-certificate -N -c -O vpsmanager.sh https://raw.githubusercontent.com/yzh118/vpsmanager/v1.2.0/vpsmanager.sh && chmod +x vpsmanager.sh && bash vpsmanager.sh
+wget --no-check-certificate -N -c -O vpsmanager.sh https://raw.githubusercontent.com/yzh118/VPSManager/refs/heads/main/vpsmanager.sh && chmod +x vpsmanager.sh && bash vpsmanager.sh
 ```
 官方脚本URL 8-8-8-8.top：
 ```
