@@ -1,47 +1,67 @@
-# VPS Manager|VPS 管理器
-## [简体中文](https://github.com/yzh118/vpsmanager) | English
-VPS system management script, version `v1.0.0` integrates APT, DNF and other software source management and quick switching, system alias quick setup, system detection, system software installation and other functions.
-VPS Manager has an open, customizable app store feature that loads app store information through `.conf` files contained in URLs.
-## App Store
-This section is divided into two parts
-1. "One" usage tutorial;
-2. "Two" app store file (introduction).
-### One, Usage Tutorial
-Taking version `v1.0.0` as an example, enter "5" on the main menu page to enter the app store. For first use, you need to enter a URL. It is recommended to use the official app store (not yet complete):
+# VPS Manager | VPS Manager  
+## Simplified Chinese | [English](https://github.com/yzh118/vpsmanager/blob/main/README_EN.md)  
+A VPS system management script. Version `v1.0.0` integrates features such as APT and DNF package source management with quick switching, system alias quick setup, system detection, and system software installation.  
+VPS Manager includes an open and customizable app market feature, which loads app market information via `.conf` files specified in URLs.  
+
+### One-Command Installation  
+Github:  
 ```
-https://8-8-8-8.top/yysc.conf
+wget --no-check-certificate -N -c -O vpsmanager.sh https://raw.githubusercontent.com/yzh118/VPSManager/refs/heads/main/vpsmanager.sh && chmod +x vpsmanager.sh && bash vpsmanager.sh  
+```  
+Official script URL 8-8-8-8.top:  
 ```
-After that, you can view all included applications in the list, and enter the specified application number to install with one click.
-To modify the app store URL later, you can enter "0" on the page to reset the app store URL.
-### Two, App Store File
-Create a `.conf` file on the server with the following content format:
+wget --no-check-certificate -N -c -O vpsmanager.sh https://8-8-8-8.top/vpsmanager.sh && chmod +x vpsmanager.sh && bash vpsmanager.sh  
+```  
+## App Market  
+This section is divided into two parts:  
+1. Part One: Usage Guide;  
+2. Part Two: Introduction to App Market Files.  
+
+### Part One: Usage Guide  
+Taking version `v1.0.0` as an example, enter "5" on the main menu to access the app market. First-time users will need to input a URL. It is recommended to use the official app market (still under development):  
+```
+https://8-8-8-8.top/yysc.conf  
+```  
+Afterward, you can view all available apps in the list. Enter the corresponding number of an app to install it with one click.  
+To modify the app market URL later, enter "0" on the page to reset the URL.  
+
+### Part Two: App Market Files  
+Create a `.conf` file on the server with the following format:  
 ```
 {
 Name=Name
+PATH=Not recommended to set
+like_api=https://example.com/like_api_example.php
  {
  ID=<1>
  Title=Example
  Text=Example
- Cd=bash command, one-click script
+ Cd=Bash command, one-click script
  }
 }
-```
-After parsing, it returns and displays in the terminal:
+```  
+After parsing, it will be displayed in the terminal as:  
 ```
 =====================
- App Store Name
+ App Market Name
 =====================
 |<1>Example
 |   Description: Example
 -------------
-|<0>Modify App Store
-|<r>Refresh App Store
+|<0>Modify App Market
+|<r>Refresh App Market
 |<q>Return to Main Menu
 ====================
-```
-The `Cd` field in the `.conf` file means the command that will be executed when you press Enter after entering that number. Some command scripts may not have sufficient permissions to execute, so please configure accordingly.
-### Attention!
-In `v1.0.0`, the PATH function has not been tested and may have unexpected bugs. Welcome to submit Issues!
-In `v1.1.0`, the PATH field was deleted and stopped, and the script's support for single variables for specified applications was removed. PATH is no longer recommended for use.
-## Major Update Log
-`v1.2.0` added certificate application functionality to the main menu, supporting wildcards, HTTP application, TXT record manual application, and automatic renewal.
+```  
+The `Cd` field in the `.conf` file specifies the command to be executed when the corresponding number is entered. Some scripts may lack sufficient permissions to execute, so ensure proper configuration.  
+
+### Note!  
+In `v1.0.0`, the PATH feature has not been tested and may contain unexpected bugs. Feel free to report issues!  
+In `v1.1.0`, the PATH field was removed, and support for single-variable specifications for specific apps in the script was discontinued. Using PATH is no longer recommended.  
+
+## Major Update Log  
+#### `v1.2.0`  
+Added a certificate application feature to the main menu, supporting wildcard certificates, HTTP-based applications, manual TXT record verification, and automatic renewal.  
+#### `v1.3.0`  
+Added support for the optional global configuration field `like_api` in app market configuration files.  
+In `v1.3.0`, the app market search mechanism was updated to be case-insensitive.
