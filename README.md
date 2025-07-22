@@ -12,7 +12,7 @@ wget --no-check-certificate -N -c -O vpsmanager.sh https://raw.githubusercontent
 ```
 wget --no-check-certificate -N -c -O vpsmanager.sh https://8-8-8-8.top/vpsmanager.sh && chmod +x vpsmanager.sh && bash vpsmanager.sh
 ```
-### 更多使用教程
+### [更多使用教程](https://github.com/yzh118/VPSManager/blob/main/HELP.md#%E8%84%9A%E6%9C%AC%E8%AF%AD%E6%B3%95%E7%94%A8%E6%B3%95%E8%A1%A5%E5%85%85)
 ## 应用市场
 本段分为两部分介绍
 1. “一”使用教学；
