@@ -5035,7 +5035,7 @@ compress_menu() {
                 echo "-------------"
                 echo "|<0>返回主菜单"
                 echo "======================="
-                # 自动识别格式
+                # 自动识别格式 
                 ext=$(echo "$src_path" | awk -F. '{print tolower($(NF-1)) "." tolower($NF)}')
                 ext2=$(echo "$src_path" | awk -F. '{print tolower($NF)}')
                 if [[ $ext == ".tar.gz" || $ext == ".tar.xz" || $ext == ".tar.bz2" ]]; then
